@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/*  */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--bg-color);
+}
+
+:root{
+    
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    
+    --bg-color : hsl(217, 54%, 11%);
+    --card: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.card{
+    padding: 1.5rem;
+    background-color: var(--card);
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.image img{
+    width: 300px;
+    border-radius: 10px;
+    aspect-ratio: 1;
+}
+.image:hover{
+    cursor: pointer;
+}
+.heading{
+    color: var(--White);
+    font-weight: 600;
+    padding: 1rem 0;
+}
+.heading:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.text{
+    color: var(--Soft-blue);
+    font-weight: 300;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--line);
+}
+.eth{
+    display: flex;
+    color: var(--Cyan);
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+.eth-day{
+    display: flex;
+    color: var(--Soft-blue);
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+.about{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.img img{
+    width: 30px;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+.about-hdg{
+    color: var(--Soft-blue);
+}
+.about-hdg span{
+    color: var(--White);
+}
+.about-hdg span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+
+@media (max-width: 400px) {
+    .card{
+        transform: scale(.9);
+    }
+}
+@media (max-width: 350px) {
+    .card{
+        transform: scale(.8);
+    }
+}
+@media (max-width: 320px) {
+    .card{
+        transform: scale(.7);
+    }
+}
